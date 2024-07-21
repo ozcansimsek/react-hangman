@@ -38,7 +38,7 @@ const Game = () => {
   );
 
   useEffect(() => {
-    fetch("https://random-words-api.vercel.app/word")
+    fetch("https://random-word-api.herokuapp.com/word?lang=en")
       .then((res) => res.json())
       .then((result) => {
         setIsLoaded(true);
