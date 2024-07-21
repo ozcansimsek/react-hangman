@@ -42,7 +42,7 @@ const Game = () => {
       .then((res) => res.json())
       .then((result) => {
         setIsLoaded(true);
-        setCurrentWordLettersArray(Array.from(result[0].word.toUpperCase()));
+        setCurrentWordLettersArray(Array.from(result[0].toUpperCase()));
         setCurrentWord(result[0]);
       });
   }, [replayCount]);

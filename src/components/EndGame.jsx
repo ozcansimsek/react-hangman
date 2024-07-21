@@ -15,16 +15,16 @@ export const EndGame = ({ gameStatus, currentWord }) => {
       <Box>
         <Typography display="inline">The word was: </Typography>
         <Typography display="inline" style={{ fontWeight: "600" }}>
-          {currentWord.word.toUpperCase()}.
+          {currentWord.toUpperCase()}.
         </Typography>
       </Box>
-      <Box>
-        <Typography display="inline">{currentWord.word}: </Typography>
-        <Typography display="inline" style={{ fontStyle: "italic" }}>
+      {/* <Box>
+        <Typography display="inline">{currentWord}: </Typography> */}
+        {/* <Typography display="inline" style={{ fontStyle: "italic" }}>
           (p. {currentWord.pronunciation}){" "}
         </Typography>
-        <Typography display="inline">{currentWord.definition}</Typography>
-      </Box>
+        <Typography display="inline">{currentWord.definition}</Typography> */}
+      {/* </Box> */}
     </>
   );
 };
